@@ -1,0 +1,10 @@
+{
+  "name": "friedmanfit-lambda",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "FriedmanFit meal generation Lambda",
+  "main": "index.mjs",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.0"
+  }
+}

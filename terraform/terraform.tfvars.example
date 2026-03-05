@@ -1,0 +1,8 @@
+# Copy this file to terraform.tfvars and fill in your values
+# NEVER commit terraform.tfvars to git — it's in .gitignore
+
+aws_region        = "us-east-1"
+environment       = "prod"
+domain_name       = "macros.friedman.fit"   # change to your domain
+anthropic_api_key = "sk-ant-..."            # your Anthropic API key
+ecs_desired_count = 1
