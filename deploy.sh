@@ -59,6 +59,7 @@ if [[ "$SKIP_FRONTEND" == false ]]; then
 
   echo "▶ Building Docker image..."
   docker build \
+    --platform linux/amd64 \
     --build-arg VITE_API_URL="$API_URL" \
     -t "${ECR_URL}:latest" \
     -t "${ECR_URL}:$(git rev-parse --short HEAD 2>/dev/null || echo 'latest')" \
